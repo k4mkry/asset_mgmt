@@ -1,0 +1,4 @@
+.git
+*.pyc
+*_init*
+*.sqlite3
