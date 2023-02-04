@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ employee.name }}</h1>
+
+<h2>Assets</h2>
+<ul>
+    {% for asset in employee.assets.all %}
+    <li><a href="{% url 'asset_detail' pk=asset.pk %}">{{ asset.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
