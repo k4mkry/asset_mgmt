@@ -3,3 +3,4 @@
 *.pyc
 *_init*
 *.sqlite3
+creds.py

@@ -1,9 +1,0 @@
-{% block content %}
-<h1>{{ asset.name }}</h1>
-
-<p>Serial number: {{ asset.serial_number }}</p>
-<p>Purchase date: {{ asset.purchase_date }}</p>
-<p>Status: {{ asset.get_status_display }}</p>
-
-<a href="{% url 'asset_edit' pk=asset.pk %}">Edit</a>
-{% endblock %}
